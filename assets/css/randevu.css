@@ -1,0 +1,303 @@
+/* =============================================
+   RANDEVU BUTONU & MODAL
+   ============================================= */
+
+/* Randevu Butonu */
+.randevu-btn {
+    background-color: #8B6914;
+    color: #fff !important;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    margin-left: 20px;
+    display: inline-block;
+}
+.randevu-btn:hover {
+    background-color: #6b5010;
+    color: #fff !important;
+}
+
+/* Modal Overlay */
+.randevu-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 99999;
+    justify-content: center;
+    align-items: center;
+}
+.randevu-overlay.aktif {
+    display: flex;
+}
+
+/* Modal Kutusu */
+.randevu-modal {
+    background: #fff;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 520px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+/* Modal Başlık */
+.randevu-modal-header {
+    background-color: #8B6914;
+    color: #fff;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.randevu-modal-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+.randevu-kapat {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+}
+
+/* İlerleme Çubuğu */
+.randevu-progress {
+    display: flex;
+    padding: 16px 24px;
+    border-bottom: 1px solid #eee;
+    gap: 8px;
+}
+.randevu-progress-adim {
+    flex: 1;
+    height: 4px;
+    background: #e0e0e0;
+    border-radius: 2px;
+    transition: background 0.3s;
+}
+.randevu-progress-adim.aktif,
+.randevu-progress-adim.tamamlandi {
+    background: #8B6914;
+}
+
+/* Modal İçerik */
+.randevu-modal-body {
+    padding: 24px;
+}
+
+/* Adım */
+.randevu-adim {
+    display: none;
+}
+.randevu-adim.aktif {
+    display: block;
+}
+.randevu-adim-baslik {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Alanları */
+.randevu-grup {
+    margin-bottom: 16px;
+}
+.randevu-grup label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 6px;
+}
+.randevu-grup input,
+.randevu-grup select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+.randevu-grup input:focus,
+.randevu-grup select:focus {
+    border-color: #8B6914;
+}
+.randevu-grup input.hata,
+.randevu-grup select.hata {
+    border-color: #e53935;
+}
+.randevu-hata-mesaj {
+    font-size: 12px;
+    color: #e53935;
+    margin-top: 4px;
+    display: none;
+}
+
+/* Konu Seçenekleri */
+.konu-secenekler {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.konu-kart {
+    border: 1.5px solid #ddd;
+    border-radius: 6px;
+    padding: 12px 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    color: #444;
+    transition: all 0.2s;
+    background: #fff;
+}
+.konu-kart:hover {
+    border-color: #8B6914;
+    color: #8B6914;
+}
+.konu-kart.secili {
+    border-color: #8B6914;
+    background: #8B6914;
+    color: #fff;
+}
+
+/* Saat Seçenekleri */
+.saat-secenekler {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-top: 8px;
+}
+.saat-kart {
+    border: 1.5px solid #ddd;
+    border-radius: 4px;
+    padding: 10px 6px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    color: #444;
+    transition: all 0.2s;
+    background: #fff;
+}
+.saat-kart:hover {
+    border-color: #8B6914;
+    color: #8B6914;
+}
+.saat-kart.secili {
+    border-color: #8B6914;
+    background: #8B6914;
+    color: #fff;
+}
+
+/* Butonlar */
+.randevu-modal-footer {
+    padding: 16px 24px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.randevu-geri-btn {
+    background: none;
+    border: 1.5px solid #ddd;
+    color: #666;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+.randevu-geri-btn:hover {
+    border-color: #999;
+    color: #333;
+}
+.randevu-ileri-btn {
+    background: #8B6914;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+.randevu-ileri-btn:hover {
+    background: #6b5010;
+}
+.randevu-ileri-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Başarı Ekranı */
+.randevu-basari {
+    text-align: center;
+    padding: 20px 0;
+}
+.randevu-basari-ikon {
+    width: 64px;
+    height: 64px;
+    background: #e8f5e9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+}
+.randevu-basari-ikon svg {
+    width: 32px;
+    height: 32px;
+    stroke: #2e7d32;
+}
+.randevu-basari h4 {
+    font-size: 18px;
+    color: #2e7d32;
+    margin-bottom: 8px;
+}
+.randevu-basari p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Yükleniyor */
+.randevu-yukleniyor {
+    display: none;
+    text-align: center;
+    padding: 10px 0;
+    color: #8B6914;
+    font-size: 14px;
+}
+
+/* Mobil Uyum */
+@media (max-width: 600px) {
+    .konu-secenekler {
+        grid-template-columns: 1fr;
+    }
+    .saat-secenekler {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .randevu-modal {
+        margin: 10px;
+    }
+}

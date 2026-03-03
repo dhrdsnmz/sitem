@@ -120,3 +120,55 @@ add_action('after_setup_theme', 'lawgist_content_width', 0);
  *
  */
 require trailingslashit(get_template_directory()) . 'inc/init.php';
+
+/**
+ * Randevu Sistemi
+ */
+function lawgist_randevu_scripts() {
+    wp_enqueue_style('randevu-css', get_template_directory_uri() . '/assets/css/randevu.css', array(), '1.0');
+    wp_enqueue_script('randevu-js', get_template_directory_uri() . '/assets/js/randevu.js', array('jquery'), '1.0', true);
+    wp_localize_script('randevu-js', 'randevuAjax', array(
+        'ajaxurl' => admin_url('admin-ajax.php'),
+        'nonce'   => wp_create_nonce('randevu_nonce'),
+    ));
+}
+add_action('wp_enqueue_scripts', 'lawgist_randevu_scripts');
+
+function lawgist_randevu_isle() {
+    check_ajax_referer('randevu_nonce', 'nonce');
+
+    $ad_soyad = sanitize_text_field($_POST['ad_soyad'] ?? '');
+    $telefon  = sanitize_text_field($_POST['telefon']  ?? '');
+    $konu     = sanitize_text_field($_POST['konu']     ?? '');
+    $tarih    = sanitize_text_field($_POST['tarih']    ?? '');
+    $saat     = sanitize_text_field($_POST['saat']     ?? '');
+
+    if (!$ad_soyad || !$telefon || !$konu || !$tarih || !$saat) {
+        wp_send_json_error(array('message' => 'Eksik bilgi.'));
+    }
+
+    $to      = 'info@yakuthukuk.com.tr';
+    $subject = 'Yeni Randevu Talebi: ' . $ad_soyad;
+    $message = '
+    <html><body style="font-family:Arial,sans-serif;color:#333;">
+    <h2 style="color:#8B6914;">Yeni Randevu Talebi</h2>
+    <table style="width:100%;border-collapse:collapse;">
+        <tr><td style="padding:8px;border-bottom:1px solid #eee;font-weight:bold;">Ad Soyad</td><td style="padding:8px;border-bottom:1px solid #eee;">' . esc_html($ad_soyad) . '</td></tr>
+        <tr><td style="padding:8px;border-bottom:1px solid #eee;font-weight:bold;">Telefon</td><td style="padding:8px;border-bottom:1px solid #eee;">' . esc_html($telefon) . '</td></tr>
+        <tr><td style="padding:8px;border-bottom:1px solid #eee;font-weight:bold;">Danışmanlık Konusu</td><td style="padding:8px;border-bottom:1px solid #eee;">' . esc_html($konu) . '</td></tr>
+        <tr><td style="padding:8px;border-bottom:1px solid #eee;font-weight:bold;">Randevu Tarihi</td><td style="padding:8px;border-bottom:1px solid #eee;">' . esc_html($tarih) . '</td></tr>
+        <tr><td style="padding:8px;font-weight:bold;">Randevu Saati</td><td style="padding:8px;">' . esc_html($saat) . '</td></tr>
+    </table>
+    </body></html>';
+
+    $headers = array('Content-Type: text/html; charset=UTF-8');
+    $gonderildi = wp_mail($to, $subject, $message, $headers);
+
+    if ($gonderildi) {
+        wp_send_json_success(array('message' => 'Randevu oluşturuldu.'));
+    } else {
+        wp_send_json_error(array('message' => 'Mail gönderilemedi.'));
+    }
+}
+add_action('wp_ajax_randevu_gonder', 'lawgist_randevu_isle');
+add_action('wp_ajax_nopriv_randevu_gonder', 'lawgist_randevu_isle');
