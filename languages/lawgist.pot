@@ -1,0 +1,527 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Lawgist\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-22 08:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.2; wp-6.0.1\n"
+"X-Domain: lawgist"
+#. used between list items, there is a space after the comma
+#: ../lawgist/inc/template-tags.php:67
+msgid " "
+msgstr ""
+#: ../lawgist/inc/classes/Lawgist_Main.php:257
+msgid " Current job openings"
+msgstr ""
+#: ../lawgist/inc/template-tags.php:70 ../lawgist/inc/template-tags.php:77
+#, php-format
+msgid "%1$s"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:510
+msgid "1"
+msgstr ""
+#. 1: title.
+#: ../lawgist/comments.php:51
+msgid "1 Response on this post"
+msgstr ""
+#: ../lawgist/inc/classes/Lawgist_Main.php:269
+msgid "404"
+msgstr ""
+#: ../lawgist/404.php:23
+msgid "404 Error!"
+msgstr ""
+#: ../lawgist/inc/widgets.php:12 ../lawgist/inc/widgets.php:24
+msgid "Add widgets here."
+msgstr ""
+#: ../lawgist/inc/theme-options.php:517
+msgid "Advanced"
+msgstr ""
+#: ../lawgist/inc/demo-setup.php:24 ../lawgist/inc/demo-setup.php:41
+#: ../lawgist/inc/demo-setup.php:58
+msgid "After you import this demo, you will have to setup the nav menu."
+msgstr ""
+#: ../lawgist/inc/classes/Lawgist_Main.php:285
+#, php-format
+msgid "Archive by Category \"%s\""
+msgstr ""
+#: ../lawgist/inc/classes/Lawgist_Main.php:288
+#, php-format
+msgid "Articles Posted by %s"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:420
+msgid "Blog Grid"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:408
+msgid "Blog Layout"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:386
+msgid "Blog Page"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:401
+msgid "Blog Page Hero Caption"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:394
+msgid "Blog Page Title"
+msgstr ""
+#: ../lawgist/inc/widgets.php:10
+msgid "Blog Sidebar"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:238 ../lawgist/inc/acf.php:29
+msgid "Body Background Color"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:340
+msgid "Body Typography"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:576
+msgid "Lawgist footer settings!"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:49 ../lawgist/inc/theme-options.php:50
+msgid "Lawgist Options"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:492
+msgid ""
+"By accessing and placing an order with UXTheme, you confirm that you are in "
+"agreement with and bound by the terms and conditions."
+msgstr ""
+#: ../lawgist/inc/classes/Lawgist_Main.php:255
+msgid "Case Study"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:409
+msgid "Choose the layout you want in blog pages"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:462
+msgid "Choose the layout you want in single pages"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:421
+msgid "Choose the number of column you want in blog pages"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:301
+msgid "Choose the site Dark logo"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:291
+msgid "Choose the site logo"
+msgstr ""
+#: ../lawgist/inc/classes/Lawgist_Main.php:291
+#, php-format
+msgid "Comment Page %s"
+msgstr ""
+#: ../lawgist/comments.php:122
+msgid "Comments are closed."
+msgstr ""
+#: ../lawgist/inc/theme-options.php:432
+msgid "Continue Reading Button Title"
+msgstr ""
+#. %s: Name of current post. Only visible to screen readers
+#: ../lawgist/template-parts/single/team.php:35
+#: ../lawgist/template-parts/single/post.php:38
+#: ../lawgist/template-parts/single/service.php:34
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:584
+msgid "Copyright"
+msgstr ""
+#: ../lawgist/inc/template-functions.php:207
+msgid "Copyright 2022, All Rights Reserved"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:561
+msgid "CSS Code"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:553
+msgid "Custom Css"
+msgstr ""
+#: ../lawgist/inc/acf.php:537
+msgid "Designation"
+msgstr ""
+#. %s: Name of current post. Only visible to screen readers
+#: ../lawgist/inc/template-tags.php:104
+#: ../lawgist/template-parts/contents/content-page.php:36
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:230
+msgid "Enable Preloader?"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:433
+msgid "Enter the button text for continue reading button."
+msgstr ""
+#: ../lawgist/inc/classes/Lawgist_Main.php:289
+msgid "Error 404"
+msgstr ""
+#: ../lawgist/inc/acf.php:333
+msgid "Exclude On"
+msgstr ""
+#: ../lawgist/inc/acf.php:314
+msgid "Exclude Rules"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:574
+msgid "Footer"
+msgstr ""
+#: ../lawgist/inc/acf.php:13
+msgid "General"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:222
+msgid "General Settings"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:491
+msgid "Give any breadcrumb page caption for the Shop page."
+msgstr ""
+#: ../lawgist/inc/theme-options.php:395 ../lawgist/inc/theme-options.php:402
+msgid "Give any breadcrumb page title for the blog page."
+msgstr ""
+#: ../lawgist/inc/theme-options.php:484
+msgid "Give any breadcrumb page title for the shop page."
+msgstr ""
+#: ../lawgist/inc/theme-options.php:455
+msgid "Give any breadcrumb page title for the single article page."
+msgstr ""
+#: ../lawgist/inc/theme-options.php:585
+msgid "Give the copyright text"
+msgstr ""
+#: ../lawgist/404.php:25
+msgid "Go back to home"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:508
+msgid "Google Maps Api"
+msgstr ""
+#: ../lawgist/inc/acf.php:44
+msgid "Header"
+msgstr ""
+#: ../lawgist/inc/acf.php:230
+msgid "Header Footer Include/Exclude Permission"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:264
+msgid "Heading Color"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:361
+msgid "Heading Typography"
+msgstr ""
+#: ../lawgist/inc/acf.php:427
+msgid "Hide this menu"
+msgstr ""
+#: ../lawgist/inc/classes/Lawgist_Main.php:283
+msgid "Home"
+msgstr ""
+#: ../lawgist/inc/acf.php:603
+msgid "icon"
+msgstr ""
+#: ../lawgist/inc/acf.php:253
+msgid "Include On"
+msgstr ""
+#: ../lawgist/inc/acf.php:234
+msgid "Include Rules"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:500
+msgid "Integrations"
+msgstr ""
+#: ../lawgist/template-parts/contents/content-none.php:45
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+#. %s: post title
+#: ../lawgist/inc/template-tags.php:87
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+#. used between list items, there is a space after the comma
+#: ../lawgist/inc/template-tags.php:74
+msgctxt "list item separator"
+msgid ""
+msgstr ""
+#: ../lawgist/comments.php:90
+msgid "Load more comments"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:283 ../lawgist/inc/theme-options.php:290
+#: ../lawgist/inc/acf.php:61
+msgid "Logo"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:310
+msgid "Logo Max Width (Desktop)"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:320
+msgid "Logo Max Width (Mobile)"
+msgstr ""
+#: ../lawgist/functions.php:52
+msgid "Main Menu"
+msgstr ""
+#: ../lawgist/inc/acf.php:446
+msgid "Mark as megamenu title"
+msgstr ""
+#: ../lawgist/inc/acf.php:486
+msgid "Megamenu Options"
+msgstr ""
+#: ../lawgist/inc/acf.php:423
+msgid "Menu Item Option"
+msgstr ""
+#: ../lawgist/single.php:54
+msgid "Next post:"
+msgstr ""
+#: ../lawgist/template-parts/contents/content-none.php:15
+msgid "Nothing Found"
+msgstr ""
+#: ../lawgist/inc/classes/Lawgist_Main.php:253
+msgid "Our Blog"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:396
+msgid "Our blog"
+msgstr ""
+#: ../lawgist/inc/classes/Lawgist_Main.php:263
+msgid "Our Products"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:485
+msgid "Our Shop"
+msgstr ""
+#: ../lawgist/inc/classes/Lawgist_Main.php:290
+#, php-format
+msgid "Page %s"
+msgstr ""
+#: ../lawgist/inc/acf.php:9
+msgid "Page Options"
+msgstr ""
+#: ../lawgist/inc/acf.php:280 ../lawgist/inc/acf.php:360
+msgid "Pages"
+msgstr ""
+#: ../lawgist/template-parts/contents/content-page.php:22
+#: ../lawgist/template-parts/single/post.php:51
+#: ../lawgist/template-parts/single/service.php:46
+msgid "Pages:"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:562
+msgid "Paste your CSS code here."
+msgstr ""
+#: ../lawgist/inc/theme-options.php:265
+msgid "Pick a color for headings."
+msgstr ""
+#: ../lawgist/inc/theme-options.php:273
+msgid "Pick a color for texts."
+msgstr ""
+#: ../lawgist/inc/theme-options.php:239
+msgid "Pick a color for the body."
+msgstr ""
+#: ../lawgist/inc/theme-options.php:248 ../lawgist/inc/theme-options.php:257
+msgid "Pick a color for the theme."
+msgstr ""
+#: ../lawgist/inc/theme-options.php:526
+msgid "Portfolio"
+msgstr ""
+#. %s: post author.
+#: ../lawgist/inc/template-tags.php:49
+#, php-format
+msgctxt "post author"
+msgid "%s"
+msgstr ""
+#: ../lawgist/comments.php:127
+msgid "Post Comment"
+msgstr ""
+#. %s: post date.
+#: ../lawgist/inc/template-tags.php:32
+#, php-format
+msgctxt "post date"
+msgid "%s"
+msgstr ""
+#: ../lawgist/inc/acf.php:149
+msgid "Post Page Layout"
+msgstr ""
+#. 1: list of categories.
+#: ../lawgist/inc/template-tags.php:70
+msgid "Posted in:"
+msgstr ""
+#: ../lawgist/inc/classes/Lawgist_Main.php:287
+#, php-format
+msgid "Posts Tagged \"%s\""
+msgstr ""
+#: ../lawgist/single.php:53
+msgid "Previous post:"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:247
+msgid "Primary Color"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:434
+#: ../lawgist/template-parts/contents/content.php:77
+msgid "Read More"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:403
+msgid "Read our latest blog posts."
+msgstr ""
+#. 1: link to WP admin new post page.
+#: ../lawgist/template-parts/contents/content-none.php:25
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+#. 1: comment count number, 2: title.
+#: ../lawgist/comments.php:57
+#, php-format
+msgctxt "Responses title"
+msgid "%1$s Response on this post"
+msgid_plural "%1$s Responses on this post"
+msgstr[0] ""
+msgstr[1] ""
+#: ../lawgist/inc/acf.php:556
+msgid "Review Rating"
+msgstr ""
+#: ../lawgist/inc/classes/Lawgist_Main.php:286
+#, php-format
+msgid "Search Results for \"%s\" Query"
+msgstr ""
+#: ../lawgist/inc/classes/Lawgist_Main.php:267
+msgid "Search results for: "
+msgstr ""
+#: ../lawgist/inc/theme-options.php:256
+msgid "Secondary Color"
+msgstr ""
+#: ../lawgist/inc/acf.php:172
+msgid "Select Custom Layout"
+msgstr ""
+#: ../lawgist/inc/acf.php:96
+msgid "Select Logo"
+msgstr ""
+#: ../lawgist/inc/acf.php:490
+msgid "Select Megamenu"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:532
+msgid "Service"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:509
+msgid "Set the google map api."
+msgstr ""
+#: ../lawgist/inc/theme-options.php:311
+msgid "Set the logo maximum width size for desktop in px unit"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:321
+msgid "Set the logo maximum width size for mobile in px unit"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:356
+msgid "Set typography for body"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:378
+msgid "Set typography for heading"
+msgstr ""
+#: ../lawgist/inc/classes/Lawgist_Main.php:284
+msgid "Shop"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:475
+msgid "Shop Page"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:490
+msgid "Shop Page Breadcrumb Caption"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:483
+msgid "Shop Page Title"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:439
+msgid "Show Excerpt?"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:519
+msgid "Show/Hide Options! ( K.A Custom Post )"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:446
+msgid "Single Page"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:461
+msgid "Single Page Layout"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:454
+msgid "Single Page Title"
+msgstr ""
+#: ../lawgist/header.php:34
+msgid "Skip to content"
+msgstr ""
+#: ../lawgist/inc/acf.php:584
+msgid "Social Links"
+msgstr ""
+#: ../lawgist/template-parts/contents/content-none.php:38
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+#: ../lawgist/template-parts/contents/content.php:40
+msgid "Sticky"
+msgstr ""
+#. 1: list of tags.
+#: ../lawgist/inc/template-tags.php:77
+msgid "Tags:"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:538
+msgid "Team"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:544 ../lawgist/inc/acf.php:533
+msgid "Testimonial"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:272
+msgid "Text Color"
+msgstr ""
+#: ../lawgist/404.php:24
+msgid ""
+"The page you are looking for is not available or doesn’t belong to this "
+"website!"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:198
+msgid "Theme activated succeessfully!!"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:205
+msgid "Theme are not activated"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:174
+msgid "Theme Information 1"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:179
+msgid "Theme Information 2"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:186
+msgid "This is the sidebar content, HTML is allowed."
+msgstr ""
+#: ../lawgist/inc/theme-options.php:175 ../lawgist/inc/theme-options.php:180
+msgid "This is the tab content, HTML is allowed."
+msgstr ""
+#: ../lawgist/inc/theme-options.php:155
+msgid ""
+"This text is displayed above the options panel. It isn't required, but more "
+"info is always better! The intro_text field accepts all HTML."
+msgstr ""
+#: ../lawgist/inc/theme-options.php:159
+msgid ""
+"This text is displayed below the options panel. It isn't required, but more "
+"info is always better! The footer_text field accepts all HTML."
+msgstr ""
+#: ../lawgist/searchform.php:2
+msgid "Type to search"
+msgstr ""
+#: ../lawgist/comments.php:129
+msgid "Type your comments...."
+msgstr ""
+#: ../lawgist/comments.php:138
+msgid "Type your email...."
+msgstr ""
+#: ../lawgist/comments.php:134
+msgid "Type your name...."
+msgstr ""
+#: ../lawgist/inc/theme-options.php:333
+msgid "Typography"
+msgstr ""
+#: ../lawgist/inc/acf.php:632
+msgid "URL"
+msgstr ""
+#: ../lawgist/inc/acf.php:77
+msgid "Use Custom Logo"
+msgstr ""
+#: ../lawgist/inc/acf.php:153
+msgid "Use Custom Page Layout?"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:300
+msgid "White Logo"
+msgstr ""
+#: ../lawgist/inc/theme-options.php:231
+msgid "Wish to use preloader?"
+msgstr ""
+
